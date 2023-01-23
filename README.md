@@ -18,10 +18,10 @@ To check the installation, simply run:
 kubectl version
 ```
 
-This command should display both `client version` and `server version` details. Something like this:
+This command should display `client version` along with some add-on versions. Something like this:
 ```shell
 Client Version: version.Info{Major:"1", Minor:"25", GitVersion:"v1.25.2", GitCommit:"5835544ca568b757a8ecae5c153f317e5736700e", GitTreeState:"clean", BuildDate:"2022-09-21T14:33:49Z", GoVersion:"go1.19.1", Compiler:"gc", Platform:"darwin/amd64"}
 Kustomize Version: v4.5.7
 Server Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.14-gke.401", GitCommit:"aafb848fb0f7414f744ec2835516352f9f2620bf", GitTreeState:"clean", BuildDate:"2022-11-28T16:13:06Z", GoVersion:"go1.17.13b7", Compiler:"gc", Platform:"linux/amd64"}
-WARNING: version difference between client (1.25) and server (1.23) exceeds the supported minor version skew of +/-1
 ```
+
