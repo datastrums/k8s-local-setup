@@ -6,18 +6,19 @@ Setting up a local Kubernetes cluster.
 Kubectl is a command-line tool for interacting with Kubernetes clusters. 
 It can be used to deploy, manage, and inspect the state of applications running on a Kubernetes cluster.
 
+&nbsp;
 
 If you are on macOS, and using homebrew you can simply do:
 ```shell
 brew install kubectl
 ```
 For up-to-date information on how to install `kubectl` on any other OS, please refer to the [official installation guide](https://kubernetes.io/docs/tasks/tools/#kubectl).
-
-
 To check the installation, simply run:
 ```shell
 kubectl version
 ```
+&nbsp;
+
 This above command should display `client version` along with some add-on versions. Something like this:
 ```shell
 Client Version: version.Info{Major:"1", Minor:"25", GitVersion:"v1.25.2", GitCommit:"5835544ca568b757a8ecae5c153f317e5736700e", GitTreeState:"clean", BuildDate:"2022-09-21T14:33:49Z", GoVersion:"go1.19.1", Compiler:"gc", Platform:"darwin/amd64"}
