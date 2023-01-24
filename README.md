@@ -6,18 +6,16 @@ Setting up a local Kubernetes cluster.
 Kubectl is a command-line tool for interacting with Kubernetes clusters. 
 It can be used to deploy, manage, and inspect the state of applications running on a Kubernetes cluster.
 
-&nbsp;
-
-If you are on macOS, and using homebrew you can simply do:
+If you are on **macOS**, and using **homebrew** you can simply do:
 ```shell
 brew install kubectl
 ```
-For up-to-date information on how to install `kubectl` on any other OS, please refer to the [official installation guide](https://kubernetes.io/docs/tasks/tools/#kubectl).
+
+For up-to-date information on how to install `kubectl` on any other platform, please refer to the [official installation guide](https://kubernetes.io/docs/tasks/tools/#kubectl).
 To check the installation, simply run:
 ```shell
 kubectl version
 ```
-&nbsp;
 
 This above command should display `client version` along with some add-on versions. Something like this:
 ```shell
@@ -31,18 +29,17 @@ Server Version: version.Info{Major:"1", Minor:"23", GitVersion:"v1.23.14-gke.401
 Minikube is a tool that makes it easy to run a single-node Kubernetes cluster locally. 
 It can be used for testing and development purposes and allows users to run and experiment with Kubernetes without the need for a remote cluster.
 
-
 If you are on macOS, and using homebrew you can simply do:
 ```shell
 brew install minikube
 ```
 For up-to-date information on how to install `kubectl` on any other OS, please refer to the [official installation guide](https://minikube.sigs.k8s.io/docs/start/).
 
-
 To check the installation, simply run:
 ```shell
 minikube version
 ```
+
 This above command should display minikube version and last commit hash:
 ```shell
 minikube version: v1.25.1
