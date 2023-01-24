@@ -45,3 +45,40 @@ This above command should display minikube version and last commit hash:
 minikube version: v1.25.1
 commit: 3e64b11ed75e56e4898ea85f96b2e4af0301f43d
 ```
+
+## 3. Spin up a new Minikube cluster
+
+Let's spin up a new single-node local K8s cluster.
+
+```shell
+minikube start
+```
+
+Make sure you are on the right kubectl context.
+
+```shell
+kubectl config get-contexts
+kubectl config use-context minikube
+```
+
+
+#### Deploying application
+
+docker build -f Dockerfile -t hello-k8s:latest . 
+docker run -p 8080:5000 hello-k8s 
+kubectl create -f deployment.yaml
+minikube tunnel
+
+
+https://minikube.sigs.k8s.io/docs/handbook/accessing/#using-minikube-tunnel
+
+
+kubectl get services
+kubectl get pods
+kubectl get deploy
+
+
+kubectl delete svc hello-k8s-service  
+kubectl delete deploy hello-k8s-deployment  
+
+What is a cluster, node, pod, replica, control pane, etcd, service, deployment
